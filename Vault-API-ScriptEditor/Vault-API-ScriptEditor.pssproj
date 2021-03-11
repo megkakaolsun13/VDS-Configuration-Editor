@@ -1,0 +1,52 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{b924f00b-ff98-4053-bc95-8e8a69987259}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>MyApplication</RootNamespace>
+    <AssemblyName>MyApplication</AssemblyName>
+    <Name>Vault-API-ScriptEditor</Name>
+    <ProjectHome />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Vault-API-Sample-ActivateScheduledJobForQueue.ps1" />
+    <Compile Include="Vault-API-Sample-AddJobToQueue.ps1" />
+    <Compile Include="Vault-API-Sample-ReviewJobQueue-InvestigateParamArray.ps1" />
+    <Compile Include="Vault-API-Sample-AddJobExtractItemData.ps1" />
+    <Compile Include="Vault-API-Sample-AssignDocumentToItem.ps1" />
+    <Compile Include="Vault-API-Sample-CreateDocumentItem.ps1" />
+    <Compile Include="Vault-API-Sample-PurgeFileVersions.ps1" />
+    <Compile Include="Vault-API-Sample-Search-Custents.ps1" />
+    <Compile Include="Vault-API-Sample-Search-Files.ps1" />
+    <Compile Include="Vault-API-Sample-Search-Items.ps1" />
+    <Compile Include="Vault-API-Sample-GetPrimaryFileOfItem.ps1" />
+    <Compile Include="Vault-API-Sample-QueryGroupMembership.ps1" />
+    <Compile Include="Vault-API-Sample-Search-File-byDate.ps1" />
+    <Compile Include="Vault-API-Sample-CreateNewItemWithCategoryUDPs.ps1" />
+    <Compile Include="Vault-API-Sample-LogOnUsing_Dialog_AutoLogon.ps1" />
+    <Compile Include="Vault-API-Sample-CreateNewItemWithOtherNumscheme.ps1" />
+    <Compile Include="Vault-API-Sample-GetUserPermissions.ps1" />
+    <Compile Include="Vault-API-Sample-Template.ps1" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Target Name="Build" />
+  <Import Project="$(MSBuildExtensionsPath)\PowerShell Tools for Visual Studio\PowerShellTools.targets" Condition="Exists('$(MSBuildExtensionsPath)\PowerShell Tools for Visual Studio\PowerShellTools.targets')" />
+</Project>
