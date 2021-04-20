@@ -2,7 +2,7 @@
 
 Efficiently edit and extend Vault Data Standard Configurations using this Visual Studio Solution; the solution contains several projects:
 
--C#(WPF type) projects linking the default (program's installed configuration) and extended sample configuration of VDS; 
+- C#(WPF type) projects linking the default (program's installed configuration) and extended sample configuration of VDS; 
 	Target Vault/VDS Version: 2021  
 	- VDS-2021-ConfigLinks-Default: Links all default configuration files; copy files to .\Custom\* tree before editing and link to the projects .\Custom folder respectively.
 	- VDS-2021-Quickstart-Standard: Edit the configuration sample available for download here: https://github.com/koechlm/VDS-2021-Quickstart/releases/latest
