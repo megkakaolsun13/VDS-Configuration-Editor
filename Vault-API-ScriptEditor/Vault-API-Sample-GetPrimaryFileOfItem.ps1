@@ -12,7 +12,7 @@
 
 #region ConnectToVault
 	
-		# NOTE - click licensing v3 requires to copy AdskLicensingSDK_3.dll to PowerShell execution folder C:\Windows\System32\WindowsPowerShell\v1.0 before Powershell runtime starts
+		# NOTE - click licensing v5 requires to copy AdskLicensingSDK_5.dll to PowerShell execution folder C:\Windows\System32\WindowsPowerShell\v1.0 before Powershell runtime starts
 
 		[System.Reflection.Assembly]::LoadFrom('C:\Program Files\Autodesk\Autodesk Vault 2021 SDK\bin\x64\Autodesk.Connectivity.WebServices.dll')
 		$serverID = New-Object Autodesk.Connectivity.WebServices.ServerIdentities

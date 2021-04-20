@@ -13,7 +13,7 @@
 #region ConnectToVault
 	Try
 	{
-		# NOTE - click licensing v3 requires to copy AdskLicensingSDK_3.dll to PowerShell execution folder C:\Windows\System32\WindowsPowerShell\v1.0 before Powershell runtime starts
+		# NOTE - click licensing v5 requires to copy AdskLicensingSDK_5.dll to PowerShell execution folder C:\Windows\System32\WindowsPowerShell\v1.0 before Powershell runtime starts
 
 		[System.Reflection.Assembly]::LoadFrom('C:\Program Files\Autodesk\Autodesk Vault 2021 SDK\bin\x64\Autodesk.Connectivity.WebServices.dll')
 		$serverID = New-Object Autodesk.Connectivity.WebServices.ServerIdentities
@@ -33,7 +33,7 @@
 			{
 				[System.Reflection.Assembly]::LoadFrom('C:\Program Files\Autodesk\Autodesk Vault 2021 SDK\bin\x64\Autodesk.DataManagement.Client.Framework.Vault.dll')
 				[System.Enum]$AuthFlag = [Autodesk.DataManagement.Client.Framework.Vault.Currency.Connections.AuthenticationFlags]::Standard
-				$UsrID = $vault.AuthService.CurrentlySetSecurityHeader.UserId				
+				$UsrID = $vault.AdminService.Session.User.Id		
 				$vaultConnection = New-Object Autodesk.DataManagement.Client.Framework.Vault.Currency.Connections.Connection($vault, $VaultName, $UsrID, $serverID, $AuthFlag )
 				$mSchedJobs = $vaultConnection.WebServiceManager.JobService.GetScheduledJobs()
 				#Filter Scheduled Jobs according current Vault
