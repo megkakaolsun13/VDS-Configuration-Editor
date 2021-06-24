@@ -469,6 +469,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="..\..\..\..\..\ProgramData\Autodesk\Vault 2022\Extensions\DataStandard\Vault.Custom\Configuration\Item\ADSK.QS.ItemFileClassification.xaml">
+      <Link>Vault.Custom\Configuration\Item\ADSK.QS.ItemFileClassification.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="..\..\..\..\..\ProgramData\Autodesk\Vault 2022\Extensions\DataStandard\Vault.Custom\Configuration\Organisation\ADSK.QS.CUSTENT.Datasheet.xaml">
       <Link>Vault.Custom\Configuration\Organisation\ADSK.QS.CUSTENT.Datasheet.xaml</Link>
       <Generator>MSBuild:Compile</Generator>
